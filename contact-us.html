@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gallery — ADR Trading</title>
+  <title>Contact — ADR Trading</title>
   <link rel="stylesheet" href="style.css">
   <link
     rel="stylesheet"
@@ -21,8 +21,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html" class="active">Gallery</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact-us.html" class="active">Contact</a></li>
         </ul>
       </nav>
       <div class="contact-short">
@@ -35,27 +35,36 @@
     </div>
   </header>
 
-  <section class="gallery-full">
+  <section class="page-intro">
     <div class="container">
-      <h1>Student Wins &amp; Chart Examples</h1>
+      <h1>Contact ADR Trading</h1>
       <p>
-        This space will showcase funded accounts, passed evaluations, and clean
-        chart examples from students. For now, it’s a placeholder — you can swap
-        in real screenshots later.
+        Have a question about mentoring, prop firm evaluations, or strategy work?
+        Send a quick message and I’ll get back to you as soon as I can.
       </p>
-      <div class="slideshow">
-        <div class="slides">
-          <img src="images/gallery1.jpg" alt="Trading setup 1">
-          <img src="images/gallery2.jpg" alt="Trading setup 2">
-          <img src="images/gallery3.jpg" alt="Trading setup 3">
-          <img src="images/gallery4.jpg" alt="Trading setup 4">
-        </div>
-        <button class="prev" aria-label="Previous Slide">&#10094;</button>
-        <button class="next" aria-label="Next Slide">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="service-detail">
+    <div class="container">
+      <div class="contact-box">
+        <form id="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="What do you want help with?"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <div class="form-status"></div>
+        </form>
       </div>
-      <p class="gallery-note">
-        More student wins and screenshots to be added soon.
-      </p>
     </div>
   </section>
 
@@ -85,6 +94,18 @@
       <p>© 2025 ADR Trading • All rights reserved</p>
     </div>
   </footer>
+
+  <div class="float-social">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.tiktok.com/@adr_tradez" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok" aria-hidden="true"></i>
+    </a>
+  </div>
 
   <script src="script.js"></script>
 </body>
